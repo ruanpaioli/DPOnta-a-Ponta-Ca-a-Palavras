@@ -76,6 +76,11 @@
     aspect-ratio: 1 / 1;
     user-select: none;
     touch-action: none;
+    transition: filter .4s ease;
+  }
+  #grid.blurred {
+    filter: blur(6px);
+    pointer-events: none;
   }
   .cell {
     display: flex;
@@ -222,7 +227,7 @@
   </div>
 
   <div class="board-area">
-    <div id="grid"></div>
+    <div id="grid" class="blurred"></div>
   </div>
 
   <div class="words-panel">
@@ -348,6 +353,7 @@ function showLockedScreen(state) {
 
 function resumeGame(state) {
   startTime = state.startTime;
+  document.getElementById('grid').classList.remove('blurred');
   (state.foundWords || []).forEach(w => {
     foundWords.add(w);
     const cells = findWordPositions(w);
@@ -450,6 +456,7 @@ if (savedState && savedState.completed) {
     if (!name) { msg.textContent = 'Digita seu nome antes de começar 🙂'; return; }
     saveState({ name });
     gate.classList.remove('show');
+    gridEl.classList.remove('blurred');
     startTimer();
   }
 
