@@ -137,27 +137,23 @@
   <div class="rules-box">
     <span class="tag">COMO FUNCIONA</span>
     <p>Leia o texto de aculturamento, memorize as palavras em <b style="background:none;color:var(--yellow);padding:0;">negrito</b> e encontre-as no caça-palavras.</p>
-    <p class="premio">🏆 Os participantes concorrerão a um prêmio no fim do primeiro trimestre de campanha, conforme sua posição no ranking.</p>
+    <p class="premio">🏆 Todo mês, o prêmio vai para quem terminar mais rápido no ranking — desde que não seja pego(a) em trapaças.</p>
   </div>
 
   <div class="article">
-    <h2>Finalidade e Transparência</h2>
+    <h2>Qualidade dos Dados e Livre Acesso</h2>
     <p class="sub">O conceito de hoje</p>
 
-    <p>Nos anos 2000, era comum andar pelo centro da cidade e ver CDs gravados a canetinha com rótulos como "Mala Direta: 10 Milhões de <b>CPFs</b>" ou "Base do SPC/Serasa - 5 Milhões de <b>CPFs</b>".</p>
+    <p>Você compra um chip novo, ativa o número e, minutos depois, recebe uma mensagem: "Fulano, quite sua dívida com 90% de desconto!". Você tenta avisar que não é o Fulano, mas as ligações continuam.</p>
 
-    <p>Por aproximadamente vinte reais, qualquer um levava para casa uma planilha com nomes, telefones e endereços de milhares de brasileiros. Mas como esses dados foram parar lá? Através do desrespeito a dois princípios fundamentais da <b>LGPD</b>:</p>
+    <p>Esse pesadelo do "número <b>reciclado</b>" acontece porque muitas empresas mantêm <b>cadastros</b> antigos guardados para sempre em vez de atualizá-los ou descartá-los. Isso viola dois princípios fundamentais da <b>LGPD</b>:</p>
 
     <ul>
-      <li><b>Finalidade</b>: O motivo específico e legítimo informado ao <b>titular</b> para a coleta. A informação só pode ser tratada para o objetivo exato que foi prometido.</li>
-      <li><b>Transparência</b>: A garantia de informações claras, precisas e acessíveis ao <b>titular</b> sobre como e para que seus dados serão utilizados, sem entrelinhas ou surpresas.</li>
+      <li><b>Qualidade</b> dos Dados: A garantia de que as informações guardadas pela empresa sejam exatas, claras e, acima de tudo, atualizadas. Se o <b>cadastro</b> caducou ou perdeu a utilidade, o dado deve ser corrigido ou descartado com segurança.</li>
+      <li>Livre <b>Acesso</b>: O direito de qualquer pessoa consultar, de forma simples e gratuita, quais dados a empresa tem sobre ela e exigir a <b>correção</b> ou eliminação de informações incorretas.</li>
     </ul>
 
-    <p>Aquele CD do camelô nascia de cupons de <b>sorteio</b> do tipo "preencha para concorrer a um carro". As pessoas entregavam os dados com a <b>finalidade</b> de participar do <b>sorteio</b>, mas, por falta de <b>transparência</b>, não tinham ideia de que suas informações seriam comercializadas.</p>
-
-    <p>Neste mês em que a <b>LGPD</b> faz aniversário, a lição que fica é simples: o dado pessoal pertence ao <b>titular</b>, não à empresa.</p>
-
-    <p class="closing">Tratar a informação do <b>titular</b> fora do <b>escopo</b> combinado é um atalho arriscado que pode gerar <b>multas</b> para a empresa e dano <b>reputacional</b>, destruindo a <b>confiança</b> do titular e manchando a imagem da organização.</p>
+    <p class="closing">A lição para o nosso dia a dia: Manter <b>cadastros</b> desatualizados gera falhas de comunicação e <b>retrabalho</b> desnecessário. Quando uma informação perde a finalidade, a orientação é <b>atualizar</b> ou realizar o <b>descarte</b> seguro. Manter as bases limpas otimiza o tempo do time, evita cobranças indevidas e preserva a <b>confiança</b> no nosso trabalho.</p>
   </div>
 
   <div class="cta-area">
@@ -172,7 +168,7 @@
   (function () {
     // Precisa ser IGUAL ao valor de EDICAO no caca-palavras.html — troquem
     // os dois juntos a cada nova edição/mês.
-    const EDICAO = 'set26-c';
+    const EDICAO = 'set26';
     const STORAGE_KEY = 'dponta_cp_state_' + EDICAO;
 
     function checarEstadoERedirecionar() {
